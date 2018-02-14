@@ -112,7 +112,6 @@
 'Assets/Scripts/Countappearance.cs'
 'Assets/Scripts/CurveBall.cs'
 'Assets/Scripts/CurveHitting.cs'
-'Assets/Scripts/CurveInstantiate.cs'
 'Assets/Scripts/CurveScript.cs'
 'Assets/Scripts/DecisionScript.cs'
 'Assets/Scripts/Foul.cs'

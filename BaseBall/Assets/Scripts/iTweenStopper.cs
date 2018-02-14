@@ -17,7 +17,7 @@ public class iTweenStopper : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision collision) {
-		if(collision.gameObject == Bat){
+		if(collision.gameObject.tag == "Bat"){
 			Debug.Log("owata");
 			iTween.Stop(this.gameObject);
 		}

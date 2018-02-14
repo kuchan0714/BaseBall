@@ -19,6 +19,7 @@ GameObject:
   - component: {fileID: 114116192224004784}
   - component: {fileID: 114337958646347852}
   - component: {fileID: 114140159529073722}
+  - component: {fileID: 114940818033637838}
   m_Layer: 0
   m_Name: Curve
   m_TagString: Ball
@@ -196,7 +197,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c9d1b4f6a06c74a398f59b7ddc77e1fb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Bat: {fileID: 0}
+  Bat: {fileID: 1142977655692150, guid: d02b3017266fb44e890a13c181a8951e, type: 2}
+--- !u!114 &114940818033637838
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 191514}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4811d0b05bd74ad3b2af1a26c3d9fe5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Calbee: {fileID: 1569413849778408, guid: 6ff3caab16c6f40c9a00a2dfecca62d4, type: 2}
+  Batter: {fileID: 1941767348548788, guid: 6ff3caab16c6f40c9a00a2dfecca62d4, type: 2}
+  direct: {x: 0, y: 0, z: 0, w: 0}
+  force: 70
 --- !u!114 &114999844993978308
 MonoBehaviour:
   m_ObjectHideFlags: 1

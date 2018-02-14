@@ -6,7 +6,7 @@ public class CurveHitting : MonoBehaviour {
 
 	public GameObject Calbee;
 	public GameObject Batter;
-	public Vector3 direct;
+	public Quaternion direct;
 	public float force = 70.0f;
 
 	// Use this for initialization
@@ -18,10 +18,11 @@ public class CurveHitting : MonoBehaviour {
 	void Update () {
 		
 	}
-/*	void OnCollisionEnter(Collision junjun){
-		direct = Batter.transform.Rotate;
+	void OnCollisionEnter(Collision junjun){
+		direct = Batter.transform.localRotation;
+		Vector3 BatterAngles = direct.eulerAngles;
 		if(junjun.gameObject == Calbee){
-			this.GetComponent<Rigidbody>().AddForce(direct * force, ForceMode.Impulse);
+			this.GetComponent<Rigidbody>().AddForce(BatterAngles * force, ForceMode.Impulse);
 		}
-	}*/
+	}
 }

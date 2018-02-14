@@ -84,7 +84,6 @@
 -define:UNITY_EDITOR_OSX
 -define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
-'Assets/CurveInstantiate.cs'
 'Assets/Demigiant/DOTween/Examples/Basics.cs'
 'Assets/Demigiant/DOTween/Examples/Sequences.cs'
 'Assets/Fantasy Skybox FREE/Demo/Scripts/GE_FantasySkyboxFREE_Demo.cs'
