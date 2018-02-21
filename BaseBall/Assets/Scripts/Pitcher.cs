@@ -17,12 +17,12 @@ public class Pitcher : MonoBehaviour {
 	IEnumerator Spawn(){
 		while (true) {
 			busu = Random.Range (1, 5);
-			if(busu >= 2){
+			if(busu == 1){
 			var obj = Instantiate (ball, ball.transform.position,Quaternion.identity) as GameObject; 
 			var rigidbody = obj.GetComponent<Rigidbody>();
 
 			rigidbody.AddForce (direction * power, ForceMode.Impulse);
-			}else if(busu == 1){
+			}else if(busu >= 2){
 				Instantiate (curve);
 			}
 			yield return new WaitForSeconds(10f);

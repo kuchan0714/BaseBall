@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class CurveHitting : MonoBehaviour {
 
-	public GameObject Calbee;
+	//public GameObject Curve;
 	public GameObject Batter;
 	public Quaternion direct;
-	public float force = 70.0f;
+	public float force = 200.0f;
+	public GameObject _parent;
 
 	// Use this for initialization
 	void Start () {
@@ -19,10 +20,11 @@ public class CurveHitting : MonoBehaviour {
 		
 	}
 	void OnCollisionEnter(Collision junjun){
-		direct = Batter.transform.localRotation;
-		Vector3 BatterAngles = direct.eulerAngles;
-		if(junjun.gameObject == Calbee){
-			this.GetComponent<Rigidbody>().AddForce(BatterAngles * force, ForceMode.Impulse);
+		if(junjun.gameObject.tag == "Bat"){
+			_parent = transform.root.gameObject;
+			this.transform.rotation = _parent.transform.rotation;
+			var rig = this.GetComponent<Rigidbody>();
+			rig.AddForce(transform.forward * force);
 		}
 	}
 }
